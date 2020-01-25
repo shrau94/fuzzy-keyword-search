@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="fuzzy.master.cs" Inherits="fuzzy" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Cloud Search</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="text-align:center; color:purple; background-color:#A6D2FF; background: url(image/bg2.png) no-repeat; background-size: cover; overflow-y: hidden;" >
+<br />
+    <h1>FUZZY KEYWORD SEARCH</h1>
+    <br />
+
+    <form id="form1" runat="server">
+    <div style="padding-left:380px"> 
+        <asp:Menu ID="Menu1" runat="server" BackColor="#FFFFCC" DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="25px" ForeColor="#CC0066" Orientation="Horizontal" StaticDisplayLevels="2" StaticSubMenuIndent="0px">
+            <DynamicHoverStyle BackColor="#CC0066" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicMenuStyle BackColor="#FFFFCC" />
+            <DynamicSelectedStyle BackColor="#FFFFCC" />
+            <StaticHoverStyle BackColor="#CC0066" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="15px" VerticalPadding="2px" />
+            <StaticSelectedStyle BackColor="#FFFFCC" />
+        </asp:Menu>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />   
+    </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

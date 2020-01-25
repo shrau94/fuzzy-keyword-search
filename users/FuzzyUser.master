@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FuzzyUser.master.cs" Inherits="users_FuzzyUser" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Cloud Search</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="text-align:center; color:purple; background-color:#A6D2FF;  background: url(bg2.png) no-repeat; background-size: cover;">
+<br />
+    <h1 >FUZZY KEYWORD SEARCH</h1>
+    <br />
+    <form id="form1" runat="server">
+    <div style="padding-left:450px; margin: 20px 20px 20px 20px; min-height:50px"> 
+        <asp:Menu ID="Menu1" runat="server" BackColor="#FFFFCC" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="25px" ForeColor="#CC0066" Orientation="Horizontal" StaticSubMenuIndent="0px">
+            <DynamicHoverStyle BackColor="#CC0066" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicMenuStyle BackColor="#FFFFCC" />
+            <DynamicSelectedStyle BackColor="#FFFFCC" />
+            <StaticHoverStyle BackColor="#CC0066" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="15px" VerticalPadding="2px" />
+            <StaticSelectedStyle BackColor="#FFFFCC" />
+             <Items>
+                        <asp:MenuItem NavigateUrl="Upload.aspx" Text="Upload" Value="Upload"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="Search.aspx" Text="Search" Value="Search"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="Logout.aspx" Text="Logout" Value="Logout"></asp:MenuItem>
+                    </Items>
+        </asp:Menu>
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
